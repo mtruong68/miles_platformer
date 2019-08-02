@@ -10,7 +10,7 @@ public class KillPlayer : MonoBehaviour
         if (c.name == "Player")
         {
             Destroy(c.gameObject);
-            SceneManager.LoadScene("First", LoadSceneMode.Single);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
         } 
     }
 }
